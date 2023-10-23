@@ -31,4 +31,9 @@ router.post("/addAddress", async function (req, res, next) {
   res.send({ message: "ok pass" });
 });
 
+router.get("/health", async function (req, res) {
+  res.statusCode = 200;
+  res.send("API SUCCESSFULLY RUNNING");
+});
+
 module.exports = router;
